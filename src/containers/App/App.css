@@ -1,0 +1,14 @@
+.app {
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+ }
+ 
+ .app.dark {
+   background-color: #1a202c;
+   color: white;
+ }
+ 
+ main {
+   flex: 1;
+ }

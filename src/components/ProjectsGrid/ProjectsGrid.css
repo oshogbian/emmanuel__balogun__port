@@ -1,0 +1,138 @@
+.projects-grid {
+  background-color: white;
+  padding: 4rem 2rem;
+  transition: background-color 0.3s ease;
+}
+
+.dark .projects-grid {
+  background-color: #1a202c;
+  color: white;
+}
+
+.projects-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 2rem;
+}
+
+.projects-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  color: #111827;
+  position: relative;
+}
+
+.projects-title:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background-color: #2563eb;
+}
+
+.dark .projects-title {
+  color: white;
+}
+
+.projects-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.dark .project-card {
+  background-color: #2d3748;
+  border-color: #4a5568;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.project-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #1a202c;
+}
+
+.dark .project-title {
+  color: white;
+}
+
+.project-description {
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+.dark .project-description {
+  color: #e2e8f0;
+}
+
+.project-meta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.dark .project-meta {
+  color: #cbd5e0;
+}
+
+.tech-stack, .timeline {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 0;
+  transition: color 0.3s ease;
+}
+
+.project-link:hover {
+  color: #1d4ed8;
+}
+
+.dark .project-link {
+  color: #60a5fa;
+}
+
+.dark .project-link:hover {
+  color: #93c5fd;
+}
+
+@media (max-width: 768px) {
+  .projects-container {
+    padding-left: 1rem;
+  }
+  
+  .projects-list {
+    grid-template-columns: 1fr;
+  }
+}
