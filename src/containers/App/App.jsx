@@ -4,7 +4,7 @@ import HeroSection from '../../components/HeroSection/HeroSection';
 import ProjectsGrid from '../../components/ProjectsGrid/ProjectsGrid';
 import Resume from '../../components/Resume/Resume';
 import Footer from '../../components/Footer/Footer';
-import About from '../../components/about/about';
+import About from '../../components/About/About';
 import './App.css';
 
 const App = () => {
